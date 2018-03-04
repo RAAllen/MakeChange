@@ -44,58 +44,37 @@ public class MakeChange {
 		// first we should make multiply by 100 and everything an integer to make math
 		// easier and more precise.
 		int wholePrice = (int) (price * 100);
-		// the many sysouts of values are for testing to make sure things are flowing
-		// through properly, once they pass a sysout, i am commenting them out
-		// System.out.println(wholePrice);
-
 		int wholeMoney = (int) (money * 100);
-		// System.out.println(wholeMoney);
+		
 
 		// set the initial change amount to the money tendered minus the money owed
 		int change = wholeMoney - wholePrice;
-		// System.out.println(change);
 
 		// get the number of twenties by dividing by 2000
 		int twenties = (change / 2000);
-//		System.out.println("20s:" + twenties);
 		// set the change to now equal the remainder of change when divided by the twenties value
 		change = (change % 2000);
-//		System.out.println("change:" + change);
 
 		int tens = (change / 1000);
-//		System.out.println("10s:" + tens);
-		change = (change % 1000);
-//		System.out.println("change:" + change);
+		change = (change % 1000);]
 
 		int fives = (change / 500);
-//		System.out.println("5s:" + fives);
 		change = (change % 500);
-//		System.out.println("change:" + change);
 
 		int ones = (change / 100);
-//		System.out.println("1s:" + ones);
 		change = (change % 100);
-//		System.out.println("change:" + change);
 
 		int quarters = (change / 25);
-//		System.out.println("25cs:" + quarters);
 		change = (change % 25);
-//		System.out.println("change:" + change);
 
 		int dimes = (change / 10);
-//		System.out.println("10cs:" + dimes);
 		change = (change % 10);
-//		System.out.println("change:" + change);
 
 		int nickels = (change / 5);
-//		System.out.println("5cs:" + nickels);
 		change = (change % 5);
-//		System.out.println("change:" + change);
 
 		int pennies = (change / 1);
-//		System.out.println("1cs:" + pennies);
 		change = (change % 1);
-//		System.out.println("change:" + pennies);
 		
 	}
 
