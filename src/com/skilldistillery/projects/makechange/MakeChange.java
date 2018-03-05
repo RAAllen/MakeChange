@@ -28,7 +28,6 @@ public class MakeChange {
 		double price = 0;
 		System.out.println("Hello. Please enter the price of the item you would like to purchase.");
 		price = scanner.nextDouble();
-		// System.out.println(price); testing to make sure we are capturing price
 		return price;
 	}
 
@@ -36,7 +35,6 @@ public class MakeChange {
 		double money = 0;
 		System.out.println("How much money will you be using to pay for this?");
 		money = scanner.nextDouble();
-		// System.out.println(money); testing to make sure we are capturing money
 		return money;
 	}
 
