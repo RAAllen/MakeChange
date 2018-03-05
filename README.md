@@ -2,7 +2,7 @@
 
 ### Skill Distillery Week 1 Homework
 
-#### Program to calculate change.
+#### A Java program to calculate change and return it to a user.
 
 #### By _**Rebecca Allen**_
 
