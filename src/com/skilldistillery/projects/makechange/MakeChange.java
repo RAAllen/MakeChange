@@ -1,5 +1,6 @@
 package com.skilldistillery.projects.makechange;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class MakeChange {
@@ -40,7 +41,9 @@ public class MakeChange {
 
 	public static void makeChange(double price, double money) {
 		// print out the total change due without delving into bills and coins, remembering to display it as a positive, this will make it easier to check and test later
-		System.out.println("Your total change will be: $" + ((price - money) * -1));
+		double rawChange = (money - price);
+		DecimalFormat twoDecimals = new DecimalFormat("#.00");
+		System.out.println("Your total change will be: $" + twoDecimals.format(rawChange));
 		
 		// first we should make multiply by 100 and everything an integer to make math
 		// easier and more precise.
